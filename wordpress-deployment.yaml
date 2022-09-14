@@ -22,7 +22,7 @@ spec:
         - containerPort: 80
         env:
           - name: WORDPRESS_DB_HOST
-            value: mysql-deployment
+            value: mysql-service
           - name: WORDPRESS_DB_PASSWORD
             valueFrom: 
                 secretKeyRef:
